@@ -1,12 +1,3 @@
-:root{
-  --black:#333;
-  --black-dark:#222;
-  --white:#fff;
-  --gray:#d6d6d670;
-  --orange:#EB501E;
-  --orange-hover:#DA491A;
-}
-
 html,body{
   margin:0;
   padding:0;
@@ -127,6 +118,8 @@ footer {
   background-color: var(--orange);
   height: 256px;
   width: 100%;
+    margin-top: -16px;
+
   margin-top: calc(100vh - 256px);
 }
 footer li{

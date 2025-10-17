@@ -53,25 +53,128 @@
         </div>
     </header>
     <main>
-        <section id="present">
-
+        <!--TOP -->
+        <section class="top">
+            <div class="top-content d-flex align-center justify-between row">
+                <div class="top-text">
+                    <h1>Garage<br><span>SARL LD AUTO</span></h1>
+                    <p class="subtitle">L’expertise à petit prix !</p>
+                    <div class="top-buttons">
+                        <button class="btn white" id="open-modal">Prendre un rendez-vous</button>
+                        <button class="btn outline">Obtenir un devis en ligne</button>
+                    </div>
+                </div>
+                <div class="top-image">
+                    <img src="./images/garage4.jpg" alt="Garage SARL LD AUTO">
+                </div>
+            </div>
         </section>
 
-        <section id="company-information">
-
+        <!-- INFOS -->
+        <section class="infos d-flex justify-around align-center row">
+            <div class="info-box">
+                <h3>📍 Notre adresse</h3>
+                <p><br>11 RUE RENÉ DESCARTES <br>56890<br>PLESCOP</p>
+            </div>
+            <div class="info-box">
+                <h3>📞 Contact</h3>
+                <p><b>Téléphone:</b><br>07 83 61 61 59<br>---<br><b>E-mail:</b> sarlldauto@eurorepar.fr</BR></p>
+            </div>
+            <div class="info-box">
+                <h3>🕓 Horaires</h3>
+                <p><b>Du lundi au vendredi :</b><br> 09:00-12:00 / 14:00-18:30<br><br><b>Samedi :</b><br>09:00-12:00 /
+                    14:00-16:00</p>
+            </div>
         </section>
 
-        <section id="our-benefits">
+        <div class="separator"></div>
 
+        <!-- PRESTATIONS -->
+        <section class="prestations d-flex column-only">
+            <div>
+                <h2>Nos prestations</h2>
+                <p>Tout nos services pour votre véhicule</p>
+            </div>
+            <div class="prestations-grid d-flex row">
+                <div class="card">Mécanique</div>
+                <div class="card">Carrosserie</div>
+                <div class="card">Contrôle technique</div>
+                <div class="card">Révisions</div>
+            </div>
         </section>
 
-        <section id="our-workshop">
+        <div class="separator"></div>
 
+        <!-- ATELIER -->
+        <section class="atelier">
+  <h2>Notre atelier</h2>
+
+  <div class="carousel">
+    <button class="prev" aria-label="Précédent">&#10094;</button>
+    <div class="carousel-track">
+      <img src="./images/garage1.jpg" alt="Atelier mécanique">
+      <img src="./images/garage2.jpg" alt="Garage intérieur">
+      <img src="./images/garage3.jpg" alt="Réparation voiture">
+    </div>
+
+    <button class="next" aria-label="Suivant">&#10095;</button>
+  </div>
+
+  <div class="dots" aria-hidden="false"></div>
+</section>
+<script src="scripts2.js"></script>
+        
+<!-- AVIS -->
+        <section id="opinions" class="d-flex align-center justify-around">
+            <div class="opinion-card d-flex row align-center justify-around">
+                <div class="opinion-card-note d-flex column align-center justify-center">
+                    <div>
+                        <img class="profile" src="images/profile.jpg" alt="Image de profile">
+                    </div>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                </div>
+                <div class="opinion-card-text">
+                    <h3>Shrek</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ex accusantium temporibus aliquam
+                        facilis voluptates laboriosam quibusdam quidem vero autem dignissimos beatae inventore a.</p>
+                </div>
+            </div>
+
+            <div class="opinion-card d-flex row align-center justify-around">
+                <div class="opinion-card-note d-flex column align-center justify-center">
+                    <div>
+                        <img class="profile" src="images/profile2.jpg" alt="Image de profile">
+                    </div>
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
+                </div>
+                <div class="opinion-card-text">
+                    <h3>Jason</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ex accusantium temporibus aliquam
+                        facilis voluptates laboriosam quibusdam quidem vero autem dignissimos beatae inventore a.</p>
+                </div>
+            </div>
+
+            <div class="opinion-card d-flex row align-center justify-around">
+                <div class="opinion-card-note d-flex column align-center justify-center">
+                    <div>
+                        <img class="profile" src="images/profile3.png" alt="Image de profile">
+                    </div>
+                    <div class="stars">
+                        ★★☆☆☆
+                    </div>
+                </div>
+                <div class="opinion-card-text">
+                    <h3>Walter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ex accusantium temporibus aliquam
+                        facilis voluptates laboriosam quibusdam quidem vero autem dignissimos beatae inventore a.</p>
+                </div>
+            </div>
         </section>
-
-        <section id="opinion">
-
-        </section>
+        <script src="scripts.js"></script>
     </main>
 
 
@@ -88,7 +191,9 @@
             </ul>
         </div>
     </footer>
+    <div id="modal" class="modal"></div>
     <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
 </body>
 
 </html>

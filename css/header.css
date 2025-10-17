@@ -1,0 +1,74 @@
+/*--- Global ---*/
+:root{
+    --black:#333;
+    --white:#fff;
+    --gray:#d6d6d670;
+    --orange:#EB501E;
+    --orange-hover:#DA491A;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+/*--- Header ---*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+    height: 100px;
+}
+/*--- Navbar ---*/
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+nav img{
+    width: 12px;
+    height: 12px;
+}
+
+.dropdown-btn{
+    border: none !important;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+nav ul li a, .dropdown-btn{
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 4px solid var(--white);
+}
+
+nav ul li a:hover, .dropdown-btn:hover{
+    border-bottom: 4px solid var(--orange);
+}
+
+.menu{
+    display: none;
+}
+
+/*--- Responsive Design (Tablet, Mobile) ---*/
+@media (max-width: 800px) {
+    .menu{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+}

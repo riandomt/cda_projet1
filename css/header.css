@@ -118,9 +118,8 @@ footer {
   background-color: var(--orange);
   height: 256px;
   width: 100%;
-    margin-top: -16px;
+    margin-top: 64px;
 
-  margin-top: calc(100vh - 256px);
 }
 footer li{
     list-style-type: none;
